@@ -2,7 +2,7 @@
 
 'use strict';
 
-process.title = 'ionic';
+process.title = 'thf-mobile';
 process.on('unhandledRejection', r => console.error(r));
 
 var semver = require('semver');

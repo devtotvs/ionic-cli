@@ -1,12 +1,12 @@
 {
-  "name": "ionic",
-  "version": "3.3.0",
+  "name": "thf-mobile",
+  "version": "1.0.27",
   "preferGlobal": true,
-  "description": "A tool for creating and developing Ionic Framework mobile apps.",
-  "homepage": "http://ionicframework.com/",
-  "author": "Ionic Team <hi@ionic.io> (http://ionic.io) ",
+  "description": "A tool for creating and developing THF mobile apps.",
+  "homepage": "https://thf.totvs.com.br/",
+  "author": "THF Team",
   "bin": {
-    "ionic": "./bin/ionic"
+    "thf-mobile": "./bin/thf-mobile"
   },
   "engines": {
     "node": ">=6.4.0"
@@ -23,7 +23,7 @@
     "watch-ts": "tsc -w",
     "watch-js": "cross-env IONIC_PREPUBLISH_PLUGIN_VERSION=${npm_package_version}-local \"npm run watch-js-chokidar\"",
     "watch-js-chokidar": "chokidar --silent \"dist/**/*.js\" -c \"npm run build-js\"",
-    "script-prepublish": "cli-scripts-prepublish ionic",
+    "script-prepublish": "cli-scripts-prepublish thf-mobile",
     "test": "jest",
     "prepublish": "in-publish && npm run build || not-in-publish"
   },
@@ -32,9 +32,8 @@
     "dist/"
   ],
   "keywords": [
-    "ionic",
-    "ionic framework",
-    "ionicframework",
+    "thf",
+    "totvs html framework",
     "mobile",
     "app",
     "hybrid",
@@ -44,10 +43,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/ionic-team/ionic-cli.git"
+    "url": "https://github.com/devtotvs/thf-mobile-cli.git"
   },
   "bugs": {
-    "url": "https://github.com/ionic-team/ionic-cli/issues"
+    "url": "https://github.com/devtotvs/thf-mobile-cli/issues"
   },
   "license": "MIT",
   "dependencies": {

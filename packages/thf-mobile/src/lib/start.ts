@@ -124,7 +124,7 @@ export function getStarterTemplateTextList(templateList: StarterTemplate[]): str
  */
 export function getHelloText(): string {
   return `
-${chalk.bold('♬ ♫ ♬ ♫  Your Ionic app is ready to go! ♬ ♫ ♬ ♫')}
+${chalk.bold('♬ ♫ ♬ ♫  Your THF Mobile app is ready to go! ♬ ♫ ♬ ♫')}
 
 ${chalk.bold('Run your app in the browser (great for initial development):')}
   ${chalk.green('ionic serve')}

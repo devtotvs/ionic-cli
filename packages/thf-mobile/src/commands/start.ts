@@ -38,11 +38,11 @@ import { STARTER_TYPES, STARTER_TEMPLATES } from '../lib/starter-templates';
   type: 'global',
   description: 'Create a new project',
   longDescription: `
-This command creates a working Ionic app. It installs dependencies for you and sets up your project.
+This command creates a working THF Mobile app. It installs dependencies for you and sets up your project.
 
-${chalk.green('ionic start')} will create an app from a template. You can list all templates with the ${chalk.green('--list')} option.
+${chalk.green('thf-mobile start')} will create an app from a template. You can list all templates with the ${chalk.green('--list')} option.
 
-If you want to create an Ionic/Cordova app, use the ${chalk.green('--cordova')} option.
+If you want to create an THF Mobile/Cordova app, use the ${chalk.green('--cordova')} option.
   `,
   exampleCommands: [
     '',
@@ -180,7 +180,7 @@ export class StartCommand extends Command implements CommandPreRun {
     const config = await this.env.config.load();
 
     if (!isProjectNameValid(projectName)) {
-      throw `Please name your Ionic project something meaningful other than ${chalk.red(projectName)}`;
+      throw `Please name your THF Mobile project something meaningful other than ${chalk.red(projectName)}`;
     }
 
     let starterType = STARTER_TYPES.find(type => type['id'] === options['type']);

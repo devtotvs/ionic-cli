@@ -85,16 +85,15 @@ async function formatUsage(env: IonicEnvironment) {
     wordWrap(`${cliFlags.map(f => chalk.dim('[' + f + ']')).join(' ')}`, { indentation: 12 }),
   ];
 
-  return usageLines.map(u => `    ${chalk.dim('$')} ${chalk.green('ionic ' + u)}`).join('\n') + '\n';
+  return usageLines.map(u => `    ${chalk.dim('$')} ${chalk.green('thf-mobile ' + u)}`).join('\n') + '\n';
 }
 
 function formatHeader(env: IonicEnvironment) {
-  return `   _             _
-  (_)           (_)
-   _  ___  _ __  _  ___
-  | |/ _ \\| '_ \\| |/ __|
-  | | (_) | | | | | (__
-  |_|\\___/|_| |_|_|\\___|  CLI ${env.plugins.ionic.version}\n`;
+  return `  _     _        __                               _       _   _        
+ | |_  | |__    / _|          _ __ ___     ___   | |__   (_) | |   ___ 
+ | __| | '_ \\  | |_   _____  | \'_ \` _ \\   / _ \\  | \'_ \\  | | | |  / _ \\
+ | |_  | | | | |  _| |_____| | | | | | | | (_) | | |_) | | | | | |  __/
+  \\__| |_| |_| |_|           |_| |_| |_|  \\___/  |_.__/  |_| |_|  \\___|  CLI ${env.plugins.ionic.version}\n`;
 }
 
 function getHelpDetails(env: IonicEnvironment, commandMetadataList: CommandData[], filters: ((cmd: CommandData) => boolean)[] = []): string[] {
@@ -144,7 +143,7 @@ async function formatCommandUsage(env: IonicEnvironment, inputs: CommandInput[] 
     return '[<' + input.name + '>]';
   };
 
-  const usageLine = `${chalk.dim('$')} ${chalk.green('ionic ' + commandName + ' ' + inputs.map(formatInput).join(' '))}`;
+  const usageLine = `${chalk.dim('$')} ${chalk.green('thf-mobile ' + commandName + ' ' + inputs.map(formatInput).join(' '))}`;
 
   return `
   ${chalk.bold('Usage')}:

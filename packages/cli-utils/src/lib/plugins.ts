@@ -334,17 +334,17 @@ async function facilitatePluginUpdate(env: IonicEnvironment, ionicPlugin: Hydrat
 
 export async function checkForUpdates(env: IonicEnvironment): Promise<string[]> {
   const allPlugins = await Promise.all(Object.keys(env.plugins).map(n => hydratePlugin(env, env.plugins[n])));
-  const ionicPlugin = allPlugins.find(p => p.name === 'ionic');
+  const ionicPlugin = allPlugins.find(p => p.name === 'thf-mobile');
 
   if (!ionicPlugin) {
-    throw new FatalException('Ionic plugin not initialized.');
+    throw new FatalException('THF Mobile plugin not initialized.');
   }
 
   if (ionicPlugin.updateAvailable) {
     await facilitateIonicUpdate(env, ionicPlugin);
   }
 
-  const plugins = allPlugins.filter(p => p.name !== 'ionic');
+  const plugins = allPlugins.filter(p => p.name !== 'thf-mobile');
   const updates: string[] = [];
 
   for (let plugin of plugins) {
@@ -365,7 +365,7 @@ async function getLatestPluginVersion(env: IonicEnvironment, plugin: Plugin): Pr
   const config = await env.config.load();
   const distTag = determineDistTag(plugin.version);
 
-  if ((plugin.name === 'ionic' && config.cliFlags['dev-always-ionic-updates']) || (plugin.name !== 'ionic' && config.cliFlags['dev-always-plugin-updates'])) {
+  if ((plugin.name === 'thf-mobile' && config.cliFlags['dev-always-ionic-updates']) || (plugin.name !== 'thf-mobile' && config.cliFlags['dev-always-plugin-updates'])) {
     return '999.999.999';
   }
 

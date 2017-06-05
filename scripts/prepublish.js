@@ -2,7 +2,8 @@
 
 const path = require('path');
 const replace = require('replace');
-
+console.log('Pluginname: ', process.argv[2]);
+// process.exit(999);
 const pluginName = process.argv[2];
 const pluginPath = path.join(__dirname, `../packages/${pluginName}`);
 const plugin = require(pluginPath);
