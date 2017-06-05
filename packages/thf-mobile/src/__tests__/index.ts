@@ -7,7 +7,7 @@ describe('ionic', () => {
   describe('getProjectRootDir', () => {
 
     jest.resetModules();
-    const cliUtils = require('@ionic/cli-utils');
+    const cliUtils = require('@totvs/cli-utils');
     const getProjectRootDir = require('../').getProjectRootDir;
 
     it('should get empty string with empty input', async () => {
@@ -52,7 +52,7 @@ describe('ionic', () => {
       jest.resetModules();
       jest.mock('path', () => path.win32);
 
-      const cliUtils = require('@ionic/cli-utils');
+      const cliUtils = require('@totvs/cli-utils');
       const getProjectRootDir = require('../index').getProjectRootDir;
 
       it('should get empty string with empty input', async () => {

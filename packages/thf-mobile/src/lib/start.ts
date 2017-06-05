@@ -13,7 +13,7 @@ import {
   fsUnlink,
   fsWriteJsonFile,
   load as loadFromUtils,
-} from '@ionic/cli-utils';
+} from '@totvs/cli-utils';
 
 import { StarterTemplate, StarterTemplateType } from '../definitions';
 

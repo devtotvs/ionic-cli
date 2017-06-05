@@ -14,7 +14,7 @@ import {
   createArchive,
   filterOptionsByIntent,
   validators,
-} from '@ionic/cli-utils';
+} from '@totvs/cli-utils';
 
 import { upload } from '../../lib/upload';
 

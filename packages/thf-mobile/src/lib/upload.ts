@@ -8,7 +8,7 @@ import {
   DeploySnapshotRequest,
   IonicEnvironment,
   createArchive,
-} from '@ionic/cli-utils';
+} from '@totvs/cli-utils';
 
 export async function upload(env: IonicEnvironment, { note, channelTag }: { note?: string, channelTag?: string }): Promise<DeploySnapshotRequest> {
   let channel: DeployChannel | undefined;

@@ -1,10 +1,5 @@
-# Ionic CLI
+#TOTVS HTML Framework Mobile
 
-The Ionic command line interface (CLI) is your go-to tool for developing
-[Ionic](https://ionicframework.com/) apps.
+Welcome to wonderful world of TOTVS HTML Framework Mobile!
 
-Use the `ionic help` command for more detailed task information.
-
-For details, please see the project
-[README.md](https://github.com/ionic-team/ionic-cli/blob/master/README.md) on
-Github.
+It is a page for *contributors of TOTVS HTML Framework Mobile*, if you want to use this for create your apps, please consult the official documentation.

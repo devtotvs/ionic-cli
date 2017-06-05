@@ -1,4 +1,4 @@
-import { CommandLineInputs, CommandLineOptions, Command, CommandMetadata } from '@ionic/cli-utils';
+import { CommandLineInputs, CommandLineOptions, Command, CommandMetadata } from '@totvs/cli-utils';
 import { getIonitronString, ionitronStatements } from '../lib/ionitron';
 
 @CommandMetadata({

@@ -9,7 +9,7 @@ import {
   CommandMetadata,
   PackageClient,
   prettyPath,
-} from '@ionic/cli-utils';
+} from '@totvs/cli-utils';
 
 @CommandMetadata({
   name: 'download',

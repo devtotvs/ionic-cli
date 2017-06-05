@@ -7,7 +7,7 @@ import {
   CommandMetadata,
   CommandPreRun,
   validators,
-} from '@ionic/cli-utils';
+} from '@totvs/cli-utils';
 
 @CommandMetadata({
   name: 'login',

@@ -1,4 +1,4 @@
-import { ProjectType } from '@ionic/cli-utils';
+import { ProjectType } from '@totvs/cli-utils';
 
 export interface StarterTemplate {
   name: string;

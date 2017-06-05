@@ -10,7 +10,7 @@ import {
   createFatalAPIFormat,
   isAppResponse,
   isAppsResponse,
-} from '@ionic/cli-utils';
+} from '@totvs/cli-utils';
 
 import { load } from '../lib/modules';
 

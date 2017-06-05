@@ -9,7 +9,7 @@ import {
   installPlugin,
   promptToInstallProjectPlugin,
   validators,
-} from '@ionic/cli-utils';
+} from '@totvs/cli-utils';
 
 const TYPE_CHOICES = ['component', 'directive', 'page', 'pipe', 'provider', 'tabs'];
 

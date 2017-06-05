@@ -32,7 +32,7 @@ import {
   pathExists,
   pkgInstallArgs,
   registerHooks as cliUtilsRegisterHooks,
-} from '@ionic/cli-utils';
+} from '@totvs/cli-utils';
 
 import { IonicNamespace } from './commands';
 

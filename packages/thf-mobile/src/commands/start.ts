@@ -16,7 +16,7 @@ import {
   prettyPath,
   rimrafp,
   validators,
-} from '@ionic/cli-utils';
+} from '@totvs/cli-utils';
 
 import {
   isProjectNameValid,

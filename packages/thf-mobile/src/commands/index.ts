@@ -15,7 +15,7 @@ import {
   metadataToMinimistOptions,
   promptToInstallPlugin,
   showHelp,
-} from '@ionic/cli-utils';
+} from '@totvs/cli-utils';
 
 import { PackageNamespace } from './package/index';
 

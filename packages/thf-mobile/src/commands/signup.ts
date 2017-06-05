@@ -4,7 +4,7 @@ import {
   CommandLineOptions,
   Command,
   CommandMetadata
-} from '@ionic/cli-utils';
+} from '@totvs/cli-utils';
 
 /**
  * Metadata about the docs command

@@ -6,7 +6,7 @@ import {
   Command,
   CommandMetadata,
   contains,
-} from '@ionic/cli-utils';
+} from '@totvs/cli-utils';
 
 @CommandMetadata({
   name: 'telemetry',

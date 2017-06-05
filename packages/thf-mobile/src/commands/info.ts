@@ -8,7 +8,7 @@ import {
   InfoHookItem,
   columnar,
   strcmp,
-} from '@ionic/cli-utils';
+} from '@totvs/cli-utils';
 
 @CommandMetadata({
   name: 'info',

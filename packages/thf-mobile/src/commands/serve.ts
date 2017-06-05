@@ -5,7 +5,7 @@ import {
   CommandLineInputs,
   CommandLineOptions,
   CommandMetadata,
-} from '@ionic/cli-utils';
+} from '@totvs/cli-utils';
 
 import { load } from '../lib/modules';
 

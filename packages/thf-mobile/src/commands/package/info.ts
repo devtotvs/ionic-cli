@@ -8,7 +8,7 @@ import {
   PackageBuild,
   PackageClient,
   columnar,
-} from '@ionic/cli-utils';
+} from '@totvs/cli-utils';
 
 @CommandMetadata({
   name: 'info',

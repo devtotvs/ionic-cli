@@ -3,7 +3,7 @@ import {
   CommandLineOptions,
   Command,
   CommandMetadata,
-} from '@ionic/cli-utils';
+} from '@totvs/cli-utils';
 
 @CommandMetadata({
   name: 'version',

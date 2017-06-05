@@ -4,7 +4,7 @@ import {
   CommandLineOptions,
   CommandMetadata,
   showHelp,
-} from '@ionic/cli-utils';
+} from '@totvs/cli-utils';
 
 @CommandMetadata({
   name: 'help',
