@@ -2,6 +2,8 @@
 
 'use strict';
 
+//Permite fazer download de https auto-assinado
+process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
 process.title = 'thf-mobile';
 process.on('unhandledRejection', r => console.error(r));
 

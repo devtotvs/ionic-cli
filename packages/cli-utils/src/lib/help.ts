@@ -26,7 +26,7 @@ export async function showHelp(env: IonicEnvironment, inputs: string[]) {
     return env.log.msg(await getFormattedHelpDetails(env, env.namespace, inputs));
   }
 
-  const [ , slicedInputs, cmdOrNamespace ] = env.namespace.locate(inputs);
+  const [, slicedInputs, cmdOrNamespace] = env.namespace.locate(inputs);
 
   if (!isCommand(cmdOrNamespace)) {
     let extra = '';
@@ -89,8 +89,8 @@ async function formatUsage(env: IonicEnvironment) {
 }
 
 function formatHeader(env: IonicEnvironment) {
-  return `  _     _        __                               _       _   _        
- | |_  | |__    / _|          _ __ ___     ___   | |__   (_) | |   ___ 
+  return `  _     _        __                               _       _   _
+ | |_  | |__    / _|          _ __ ___     ___   | |__   (_) | |   ___
  | __| | '_ \\  | |_   _____  | \'_ \` _ \\   / _ \\  | \'_ \\  | | | |  / _ \\
  | |_  | | | | |  _| |_____| | | | | | | | (_) | | |_) | | | | | |  __/
   \\__| |_| |_| |_|           |_| |_| |_|  \\___/  |_.__/  |_| |_|  \\___|  CLI ${env.plugins.ionic.version}\n`;
@@ -117,10 +117,10 @@ async function formatCommandHelp(env: IonicEnvironment, cmdMetadata: CommandData
   return `
   ${chalk.bold(chalk.green(displayCmd) + ' - ' + wrappedDescription)}${formatLongDescription(cmdMetadata.longDescription)}
   ` +
-  (await formatCommandUsage(env, cmdMetadata.inputs, cmdMetadata.fullName)) +
-  formatCommandInputs(cmdMetadata.inputs) +
-  formatCommandOptions(cmdMetadata.options) +
-  formatCommandExamples(cmdMetadata.exampleCommands, cmdMetadata.fullName);
+    (await formatCommandUsage(env, cmdMetadata.inputs, cmdMetadata.fullName)) +
+    formatCommandInputs(cmdMetadata.inputs) +
+    formatCommandOptions(cmdMetadata.options) +
+    formatCommandExamples(cmdMetadata.exampleCommands, cmdMetadata.fullName);
 }
 
 function getListOfCommandDetails(cmdMetadataList: CommandData[]): string[] {
@@ -170,7 +170,7 @@ function formatCommandInputs(inputs: CommandInput[] = []): string {
 
   const fillStrings = generateFillSpaceStringList(inputs.map(input => input.name), HELP_DOTS_WIDTH, chalk.dim('.'));
 
-  function inputLineFn({ name, description}: CommandOption, index: number) {
+  function inputLineFn({ name, description }: CommandOption, index: number) {
     const optionList = chalk.green(`${name}`);
     const wrappedDescription = wordWrap(description, { indentation: HELP_DOTS_WIDTH + 6 });
 
@@ -202,8 +202,8 @@ function formatOptionLine(opt: CommandOption) {
   const optionList = (showInverse ? chalk.green(`--no-${opt.name}`) : chalk.green(`-${opt.name.length > 1 ? '-' : ''}${opt.name}`)) +
     (!showInverse && opt.aliases && opt.aliases.length > 0 ? ', ' +
       opt.aliases
-      .map((alias) => chalk.green(`-${alias}`))
-      .join(', ') : '');
+        .map((alias) => chalk.green(`-${alias}`))
+        .join(', ') : '');
 
   const optionListLength = stringWidth(optionList);
   const fullLength = optionListLength > HELP_DOTS_WIDTH ? optionListLength + 1 : HELP_DOTS_WIDTH;

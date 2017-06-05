@@ -8,7 +8,8 @@ export const STARTER_TYPES: StarterTemplateType[] = [
   {
     id: 'ionic-angular',
     name: 'v2',
-    baseArchive: 'https://github.com/ionic-team/ionic2-app-base/archive/<BRANCH_NAME>.tar.gz',
+    baseArchive: 'https://thf.totvs.com.br/templates/thf-mobile-template-base.tar.gz',
+    // baseArchive: 'https://github.com/ionic-team/ionic2-app-base/archive/<BRANCH_NAME>.tar.gz',
     globalDependencies: [],
     localDependencies: ['@ionic/cli-plugin-ionic-angular'],
   },
@@ -34,7 +35,8 @@ export const STARTER_TEMPLATES: StarterTemplate[] = [
     type: 'ionic-angular',
     description: 'A blank starter project',
     path: 'ionic-team/ionic2-starter-blank',
-    archive: 'https://github.com/ionic-team/ionic2-starter-blank/archive/<BRANCH_NAME>.tar.gz'
+    // archive: 'https://github.com/ionic-team/ionic2-starter-blank/archive/<BRANCH_NAME>.tar.gz'
+    archive: 'https://thf.totvs.com.br/templates/thf-mobile-template-blank.tar.gz'
   },
   // {
   //   name: 'sidemenu',

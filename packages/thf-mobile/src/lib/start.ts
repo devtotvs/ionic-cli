@@ -127,10 +127,10 @@ export function getHelloText(): string {
 ${chalk.bold('♬ ♫ ♬ ♫  Your THF Mobile app is ready to go! ♬ ♫ ♬ ♫')}
 
 ${chalk.bold('Run your app in the browser (great for initial development):')}
-  ${chalk.green('ionic serve')}
+  ${chalk.green('thf-mobile serve')}
 
 ${chalk.bold('Run on a device or simulator:')}
-  ${chalk.green('ionic cordova run ios')}
+  ${chalk.green('thf-mobile cordova run ios')}
 
 ${chalk.bold('Test and share your app on a device with the Ionic View app:')}
   http://view.ionic.io
@@ -182,7 +182,7 @@ export async function updatePackageJsonForCli(appName: string, starterType: Star
 
     jsonStructure['name'] = appName;
     jsonStructure['version'] = '0.0.1';
-    jsonStructure['description'] = 'An Ionic project';
+    jsonStructure['description'] = 'A THF Mobile project';
 
     await fsWriteJsonFile(filePath, jsonStructure, { encoding: 'utf8' });
 

@@ -1,6 +1,6 @@
 {
-  "name": "thf-mobile",
-  "version": "1.0.27",
+  "name": "thf-mobile-cli",
+  "version": "1.0.29",
   "preferGlobal": true,
   "description": "A tool for creating and developing THF mobile apps.",
   "homepage": "https://thf.totvs.com.br/",
