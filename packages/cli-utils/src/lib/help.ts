@@ -89,7 +89,7 @@ async function formatUsage(env: IonicEnvironment) {
 }
 
 function formatHeader(env: IonicEnvironment) {
-  return `  _     _        __                               _       _   _ 
+  return `  _     _        __                               _       _   _
  | |_  | |__    / _|          _ __ ___     ___   | |__   (_) | |   ___
  | __| | '_ \\  | |_   _____  | \'_ \` _ \\   / _ \\  | \'_ \\  | | | |  / _ \\
  | |_  | | | | |  _| |_____| | | | | | | | (_) | | |_) | | | | | |  __/
