@@ -1,5 +1,5 @@
 import * as path from 'path';
-import { IonicEnvironment, readDir } from '@ionic/cli-utils';
+import { IonicEnvironment, readDir } from '@totvs/cli-utils';
 
 /**
  * Get all platforms based on platforms directory

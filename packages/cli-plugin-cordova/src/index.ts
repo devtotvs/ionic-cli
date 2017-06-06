@@ -1,4 +1,4 @@
-import { IHookEngine, getCommandInfo } from '@ionic/cli-utils';
+import { IHookEngine, getCommandInfo } from '@totvs/cli-utils';
 import { CordovaNamespace } from './commands';
 
 export const name = '__NAME__';

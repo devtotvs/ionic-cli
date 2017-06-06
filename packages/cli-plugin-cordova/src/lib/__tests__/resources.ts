@@ -1,6 +1,6 @@
 import * as path from 'path';
 import * as resources from '../resources';
-import * as cliUtils from '@ionic/cli-utils';
+import * as cliUtils from '@totvs/cli-utils';
 
 import { ImageResource, SourceImage } from '../../definitions';
 

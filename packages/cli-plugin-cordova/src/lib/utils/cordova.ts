@@ -4,7 +4,7 @@ import {
   CommandLineOptions,
   filterOptionsByIntent,
   minimistOptionsToArray,
-} from '@ionic/cli-utils';
+} from '@totvs/cli-utils';
 
 export const CORDOVA_INTENT = 'CORDOVA';
 

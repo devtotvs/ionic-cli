@@ -18,7 +18,7 @@ import {
   getFileChecksum,
   readDir,
   writeStreamToFile,
-} from '@ionic/cli-utils';
+} from '@totvs/cli-utils';
 
 import {
   writeConfigXml,

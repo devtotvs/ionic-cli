@@ -1,6 +1,6 @@
 import * as superagentProxy from 'superagent-proxy';
 
-import { IHookEngine } from '@ionic/cli-utils';
+import { IHookEngine } from '@totvs/cli-utils';
 
 export const name = '__NAME__';
 export const version = '__VERSION__';

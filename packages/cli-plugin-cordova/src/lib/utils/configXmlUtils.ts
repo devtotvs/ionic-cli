@@ -1,5 +1,5 @@
 import * as path from 'path';
-import { ERROR_FILE_NOT_FOUND, fsReadFile, fsWriteFile, promisify } from '@ionic/cli-utils';
+import { ERROR_FILE_NOT_FOUND, fsReadFile, fsWriteFile, promisify } from '@totvs/cli-utils';
 
 import { ResourcesImageConfig, KnownPlatform, ResourcesConfig } from '../../definitions';
 import { load } from '../modules';

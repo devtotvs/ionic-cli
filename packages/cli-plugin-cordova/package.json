@@ -1,5 +1,5 @@
 {
-  "name": "@totvs/cli-plugin-cordova",
+  "name": "@ionic/cli-plugin-cordova",
   "version": "1.3.0",
   "description": "Ionic Cordova Plugin for Ionic CLI",
   "homepage": "https://ionic.io/",
@@ -59,7 +59,7 @@
     "testRegex": "/__tests__/.*\\.(ts|js)$"
   },
   "dependencies": {
-    "@totvs/cli-utils": "latest",
+    "@totvs/cli-utils": "0.0.2",
     "chalk": "^1.1.3",
     "xml2js": "^0.4.17"
   },

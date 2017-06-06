@@ -1,6 +1,6 @@
 import * as path from 'path';
 
-import { IonicEnvironment, validators } from '@ionic/cli-utils';
+import { IonicEnvironment, validators } from '@totvs/cli-utils';
 
 import * as AppScriptsType from '@ionic/app-scripts';
 import { load } from '../lib/modules';

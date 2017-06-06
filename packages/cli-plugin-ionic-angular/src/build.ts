@@ -1,6 +1,6 @@
 import * as chalk from 'chalk';
 
-import { CommandHookArgs, minimistOptionsToArray } from '@ionic/cli-utils';
+import { CommandHookArgs, minimistOptionsToArray } from '@totvs/cli-utils';
 
 import { load } from './lib/modules';
 

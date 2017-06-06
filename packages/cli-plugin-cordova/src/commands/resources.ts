@@ -7,7 +7,7 @@ import {
   CommandMetadata,
   CommandPreRun,
   promptToLogin,
-} from '@ionic/cli-utils';
+} from '@totvs/cli-utils';
 
 import {
   ImageResource,

@@ -5,7 +5,7 @@ import {
   CommandLineOptions,
   CommandMetadata,
   CommandPreRun,
-} from '@ionic/cli-utils';
+} from '@totvs/cli-utils';
 
 import { generateBuildOptions, filterArgumentsForCordova, CORDOVA_INTENT } from '../lib/utils/cordova';
 import { resetConfigXmlContentSrc } from '../lib/utils/configXmlUtils';

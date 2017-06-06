@@ -1,7 +1,7 @@
 import * as chalk from 'chalk';
 import * as path from 'path';
 
-import { IHookEngine, fsReadJsonFile } from '@ionic/cli-utils';
+import { IHookEngine, fsReadJsonFile } from '@totvs/cli-utils';
 
 import { serve } from './serve/index';
 

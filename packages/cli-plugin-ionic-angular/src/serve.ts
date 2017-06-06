@@ -1,6 +1,6 @@
 import * as chalk from 'chalk';
 
-import { CommandHookArgs, FatalException, getAvailableIPAddress, minimistOptionsToArray } from '@ionic/cli-utils';
+import { CommandHookArgs, FatalException, getAvailableIPAddress, minimistOptionsToArray } from '@totvs/cli-utils';
 
 import { load } from './lib/modules';
 

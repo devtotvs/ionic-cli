@@ -1,7 +1,7 @@
 import * as chalk from 'chalk';
 import * as path from 'path';
 
-import { IonicEnvironment, IHookEngine, readPackageJsonFile, prettyPath } from '@ionic/cli-utils';
+import { IonicEnvironment, IHookEngine, readPackageJsonFile, prettyPath } from '@totvs/cli-utils';
 
 import { build } from './build';
 import { generate } from './generate';

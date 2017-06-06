@@ -9,7 +9,7 @@ import {
   IOS_PLATFORM_PATH,
   ANDROID_PLATFORM_PATH
 } from './config';
-import { IProject } from '@ionic/cli-utils';
+import { IProject } from '@totvs/cli-utils';
 
 import { LabAppView, ApiCordovaProject } from './lab';
 import { load } from '../lib/modules';

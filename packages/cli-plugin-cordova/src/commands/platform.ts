@@ -8,7 +8,7 @@ import {
   contains,
   validate,
   validators,
-} from '@ionic/cli-utils';
+} from '@totvs/cli-utils';
 
 import { KnownPlatform } from '../definitions';
 import { filterArgumentsForCordova } from '../lib/utils/cordova';

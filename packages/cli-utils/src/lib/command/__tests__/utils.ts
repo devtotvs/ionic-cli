@@ -2,7 +2,7 @@ import * as minimist from 'minimist';
 import { CommandData } from '../../../definitions';
 import { minimistOptionsToArray, metadataToMinimistOptions, filterOptionsByIntent } from '../utils';
 
-describe('@ionic/cli-utils', () => {
+describe('@totvs/cli-utils', () => {
 
   describe('minimistOptionsToArray', () => {
 

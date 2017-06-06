@@ -1,6 +1,6 @@
 {
   "name": "thf-mobile-cli",
-  "version": "1.0.31",
+  "version": "1.0.32",
   "preferGlobal": true,
   "description": "A tool for creating and developing THF mobile apps.",
   "homepage": "https://thf.totvs.com.br/",
@@ -49,7 +49,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@totvs/cli-utils": "latest",
+    "@totvs/cli-utils": "0.0.2",
     "chalk": "^1.1.3",
     "minimist": "^1.2.0",
     "opn": "^4.0.2",

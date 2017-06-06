@@ -12,7 +12,7 @@ import {
   pathExists,
   pkgInstallArgs,
   prettyPath,
-} from '@ionic/cli-utils';
+} from '@totvs/cli-utils';
 
 import { generateBuildOptions, filterArgumentsForCordova, CORDOVA_INTENT } from '../lib/utils/cordova';
 import { resetConfigXmlContentSrc, writeConfigXmlContentSrc } from '../lib/utils/configXmlUtils';

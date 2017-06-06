@@ -8,7 +8,7 @@ import {
   contains,
   validate,
   validators,
-} from '@ionic/cli-utils';
+} from '@totvs/cli-utils';
 
 import { CORDOVA_INTENT, filterArgumentsForCordova } from '../lib/utils/cordova';
 import { resetConfigXmlContentSrc } from '../lib/utils/configXmlUtils';

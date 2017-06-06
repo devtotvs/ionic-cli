@@ -5,7 +5,7 @@ import {
   CommandLineOptions,
   CommandPreRun,
   CommandMetadata,
-} from '@ionic/cli-utils';
+} from '@totvs/cli-utils';
 
 import { filterArgumentsForCordova } from '../lib/utils/cordova';
 import { installPlatform } from '../lib/utils/setup';
