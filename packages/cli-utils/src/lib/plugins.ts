@@ -334,7 +334,7 @@ async function facilitatePluginUpdate(env: IonicEnvironment, ionicPlugin: Hydrat
 
 export async function checkForUpdates(env: IonicEnvironment): Promise<string[]> {
   const allPlugins = await Promise.all(Object.keys(env.plugins).map(n => hydratePlugin(env, env.plugins[n])));
-  const ionicPlugin = allPlugins.find(p => p.name === 'thf-mobile');
+  const ionicPlugin = allPlugins.find(p => p.name === 'thf-mobile' || p.name === 'thf-mobile-cli');
 
   if (!ionicPlugin) {
     throw new FatalException('THF Mobile plugin not initialized.');
@@ -344,7 +344,7 @@ export async function checkForUpdates(env: IonicEnvironment): Promise<string[]> 
     await facilitateIonicUpdate(env, ionicPlugin);
   }
 
-  const plugins = allPlugins.filter(p => p.name !== 'thf-mobile');
+  const plugins = allPlugins.filter(p => p.name !== 'thf-mobile' && p.name !== 'thf-mobile-cli');
   const updates: string[] = [];
 
   for (let plugin of plugins) {
